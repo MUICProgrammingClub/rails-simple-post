@@ -114,3 +114,7 @@ $ rake routes
 You will see something like this in the terminal.
 
 ![Image](vendor/assets/images/paths.png)
+
+## Import Bootstrap
+
+[Download bootstrap from here](http://getbootstrap.com/getting-started/#download)
