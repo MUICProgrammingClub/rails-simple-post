@@ -1,9 +1,9 @@
 <div class="header clearfix">
   <nav>
     <ul class="nav nav-pills pull-right">
-      <li role="presentation" class="active"><a href="<%= users_path %>">Users</a></li>
-      <li role="presentation"><a href="<%= posts_path %>">Posts</a></li>
+      <li role="presentation" class="<%= header_active("users") %>"><a href="<%= users_path %>">Users</a></li>
+      <li role="presentation" class="<%= header_active("posts") %>"><a href="<%= posts_path %>">Posts</a></li>
     </ul>
   </nav>
-  <h3 class="text-muted">Project name</h3>
+  <h3 class="text-muted"><%= @current_user.username %></h3>
 </div>
