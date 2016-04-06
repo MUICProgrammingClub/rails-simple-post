@@ -28,6 +28,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new(post_id: @post.id, user_id: @current_user.id)
   end
 
   def update
