@@ -86,3 +86,31 @@ end
 ```
 
 After this, run `rake db:migrate` in terminal
+
+## Controllers
+
+```bash
+$ rails g controller Users
+$ rails g controller Posts
+$ rails g controller Comments
+```
+
+```ruby
+# config/routes.rb
+Rails.application.routes.draw do
+  resources :users
+  resources :posts
+  resources :comments
+end
+```
+
+To get url path for users, posts, and comments,
+type the following command.
+
+```bash
+$ rake routes
+```
+
+You will see something like this in the terminal.
+
+![Image](vendor/assets/images/paths.png)
